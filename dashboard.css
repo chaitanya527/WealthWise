@@ -64,9 +64,30 @@ nav ul li a{
   line-height: 85px;
   font-weight: 600;
   margin-bottom: 25px;
-  
-
 }
+.sub-menu{
+  display: none;
+}
+nav ul li:hover .sub-menu{
+  display: block;
+  position: absolute;
+  background: #131682;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+nav ul li:hover .sub-menu ul{
+  display: block;
+  margin: 10px;
+}
+nav ul li:hover .sub-menu ul li{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 5px;
+  text-align:center;
+}
+
 
 
   
