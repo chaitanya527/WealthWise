@@ -10,38 +10,41 @@
 <!-- css link -->
 <link rel="stylesheet" type="text/css" href="F:\web development\WealthWise\css\ci.css">
 <!-- java script link -->
-<script src="F:\web development\WealthWise\js\ci.js"></script>
+<script src="F:\web development\WealthWise\js\retire.js"></script>
 <!-- ---- -->
-<title>Compound Interest </title>
+<title>retirement </title>
 </head>
 <body>
   <header>
-    <h1 class="ci">Compound Interest Calculator</h1>
+    <h1 class="ci">RETIREMENT CALUCULATOR</h1>
   </header>
-<div class="container">
-  
-  <form id="interestForm">
-    <label for="custom-lables">Initial Investment:</label>
-    <input type="number" id="principal" step="any" required>
-    
-    <label for="custom-lables">Years:</label>
-    <input type="number" id="years" step="any" required>
-    
-    <label for="custom-lables">Rate of Return (%):</label>
-    <input type="number" id="rate" step="any" required>
-    
-    <button type="button" onclick="calculateInterest()">Calculate</button>
-    
-    <div id="chart"></div>
-    
-    <label id="result">Final Amount: </label>
-  </form>
+  <div class="container">
+    <form id="retirementForm">
+        <label for="currentSavings">Current Savings:</label>
+        <input type="number" id="currentSavings" step="any" required>
+
+        <label for="annualContribution">Annual Contribution:</label>
+        <input type="number" id="annualContribution" step="any" required>
+
+        <label for="yearsToRetire">Years to Retirement:</label>
+        <input type="number" id="yearsToRetire" step="any" required>
+
+        <label for="annualReturn">Annual Return Rate (%):</label>
+        <input type="number" id="annualReturn" step="any" required>
+
+        <button type="button" onclick="calculateRetirement()">Calculate</button>
+
+        <div id="chart"></div>
+
+        <label id="result">Final Retirement Savings: </label>
+    </form>
 </div>
+
 <footer>
   <div class="foot">
     <div class="foot-col">
       <img src="F:\web development\WealthWise\img\icon-512.png" class="logo"
-      <p> jfkdkl i fihjflf rufh gicuifjg</p>
+      <p> developed by chaitu and tarun </p>
     </div>
     <div class="foot-col1">
       <h2>About</h2>

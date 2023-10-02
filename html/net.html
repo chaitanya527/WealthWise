@@ -10,33 +10,30 @@
 <!-- css link -->
 <link rel="stylesheet" type="text/css" href="F:\web development\WealthWise\css\ci.css">
 <!-- java script link -->
-<script src="F:\web development\WealthWise\js\ci.js"></script>
+<script src="F:\web development\WealthWise\js\net.js"></script>
 <!-- ---- -->
-<title>Compound Interest </title>
+<title>net worth </title>
 </head>
 <body>
   <header>
-    <h1 class="ci">Compound Interest Calculator</h1>
+    <h1 class="ci">NETWORTH Calculator</h1>
   </header>
-<div class="container">
+  <div class="container">
   
-  <form id="interestForm">
-    <label for="custom-lables">Initial Investment:</label>
-    <input type="number" id="principal" step="any" required>
+    <form id="networthForm">
+      <label for="assets">Total Assets:</label>
+      <input type="number" id="assets" step="any" required>
+      
+      <label for="liabilities">Total Liabilities:</label>
+      <input type="number" id="liabilities" step="any" required>
+      
+      <button type="button" onclick="calculateNetWorth()">Calculate</button>
+      
+      <label id="networthResult">Net Worth: </label>
+    </form>
     
-    <label for="custom-lables">Years:</label>
-    <input type="number" id="years" step="any" required>
-    
-    <label for="custom-lables">Rate of Return (%):</label>
-    <input type="number" id="rate" step="any" required>
-    
-    <button type="button" onclick="calculateInterest()">Calculate</button>
-    
-    <div id="chart"></div>
-    
-    <label id="result">Final Amount: </label>
-  </form>
-</div>
+  </div>
+  
 <footer>
   <div class="foot">
     <div class="foot-col">
