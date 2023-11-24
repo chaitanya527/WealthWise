@@ -72,20 +72,22 @@ nav ul li:hover .sub-menu{
   display: block;
   position: absolute;
   background: #131682;
-  margin-top: 15px;
-  margin-left: -15px;
+  max-width: 300px;
+}
+
+nav ul li:hover .sub-menu ul li{
+  font-family: 'Times New Roman', Times, serif;
+  float: none;
+  font-weight: 100;
+  padding: 10px 10px;
+  text-align:left;
+  display: block;
+}
+.sub-menu ul li:hover{
+  text-decoration: underline 1px solid white;
 }
 nav ul li:hover .sub-menu ul{
   display: block;
-  margin: 10px;
-}
-nav ul li:hover .sub-menu ul li{
-  width: 150px;
-  padding: 10px;
-  border-bottom: 1px dotted #fff;
-  background: transparent;
-  border-radius: 5px;
-  text-align:center;
 }
 
 
